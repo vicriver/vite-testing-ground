@@ -63,6 +63,8 @@ export default function Main() {
 
 	console.log(numbers);
   return (
+		<div className="h-[90vh] w-[90vw] p-10 flex justify-center align-middle items-center rounded-md border-1 border-white">
       <div className="flex flex-wrap gap-2" >{cards.map(card => <div className="bg-gray-200 text-black h-60 w-36 rounded-md p-4 origin-bottom hover:bg-red-300 transition-all active:rotate-15 flex flex-col justify-between border-10 border-white">{card.title} {card.content}</div>)}</div>
+		</div>
   )
 }
